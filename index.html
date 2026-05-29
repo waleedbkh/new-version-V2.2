@@ -1,150 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#15351f" />
-  <meta name="description" content="ذبائح أبو خالد - حري وسواكني، ذبح شرعي، تقطيع حسب الطلب، وتوصيل مبرد إلى باب بيتك." />
-  <title>ذبائح أبو خالد | حري وسواكني</title>
-  <link rel="preload" href="assets/hero/hero-animals.jpg" as="image" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b3d2e" />
+  <title>ذبايح أبو خالد</title>
+  <meta name="description" content="ذبايح أبو خالد - حري وسواكني، ذبح شرعي، تقطيع حسب الطلب، وتوصيل مبرد." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="site-header" id="top">
-    <div class="wrap header-wrap">
-      <a class="logo" href="#top" aria-label="ذبائح أبو خالد">
-        <img src="assets/logo/logo.png" alt="شعار ذبائح أبو خالد" />
-        <span>
-          <b>ذبائح أبو خالد</b>
-          <em>حري وسواكني</em>
-        </span>
+<body id="top">
+  <header class="site-header" aria-label="رأس الصفحة">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#top" aria-label="ذبايح أبو خالد">
+        <img src="assets/logo.png" alt="شعار ذبايح أبو خالد" />
       </a>
 
-      <button class="menu-btn" type="button" aria-label="فتح القائمة" aria-expanded="false">
-        <i></i><i></i><i></i>
-      </button>
-
-      <nav class="nav" aria-label="القائمة الرئيسية">
-        <a class="active" href="#top">الرئيسية</a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#top" class="active">الرئيسية</a>
         <a href="#hari">أنواع الحري</a>
         <a href="#sawakni">السواكني</a>
-        <a href="#cutting">التقطيع</a>
+        <a href="#cuts">التقطيع</a>
         <a href="#order">طريقة الطلب</a>
         <a href="#contact">تواصل معنا</a>
       </nav>
 
-      <a class="wa wa-top" href="https://wa.me/966530856858" target="_blank" rel="noopener">راسلنا واتساب</a>
+      <a class="wa-head" href="https://wa.me/966530856858" target="_blank" rel="noopener">راسلنا واتساب</a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="مقدمة الموقع">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1>ذبائح أبو خالد</h1>
+          <h1>ذبايح أبو خالد</h1>
           <p class="tagline">ذبيحتك من المسلخ إلى باب بيتك</p>
           <p class="desc">حري وسواكني، ذبح شرعي، تقطيع حسب الطلب، وتوصيل مبرد.</p>
 
-          <div class="hero-services" aria-label="مزايا الخدمة">
-            <div><span class="ico mosque"></span><b>ذبح شرعي</b></div>
-            <div><span class="ico knife"></span><b>تقطيع حسب الطلب</b></div>
-            <div><span class="ico truck"></span><b>توصيل مبرد</b></div>
+          <div class="hero-features" aria-label="مميزات الخدمة">
+            <div>
+              <span class="icon">⌂</span>
+              <strong>ذبح شرعي</strong>
+            </div>
+            <div>
+              <span class="icon">▱</span>
+              <strong>تقطيع حسب الطلب</strong>
+            </div>
+            <div>
+              <span class="icon">▣</span>
+              <strong>توصيل مبرد</strong>
+            </div>
           </div>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#order">الطلب الآن</a>
-            <a class="btn secondary" href="#products">تصفح الأنواع</a>
+            <a href="#order" class="btn primary">اطلب الآن</a>
+            <a href="#products" class="btn secondary">تصفح الأنواع</a>
           </div>
         </div>
-
-        <div class="hero-photo" aria-hidden="true">
-          <img src="assets/hero/hero-animals.jpg" alt="" />
-        </div>
       </div>
     </section>
 
-    <section class="section products" id="products">
+    <section class="products-section" id="products" aria-labelledby="products-title">
       <div class="wrap">
-        <h2 class="section-title"><span></span>اختر نوع الذبيحة<span></span></h2>
+        <h2 id="products-title" class="section-title">اختر نوع الذبيحة</h2>
 
-        <div class="product-grid" id="hari">
-          <article class="product-card" data-product="حري كبير">
-            <img src="assets/products/hari-big.jpg" alt="حري كبير" loading="lazy" />
-            <button type="button">حري كبير</button>
+        <div class="products-grid first-row" id="hari">
+          <article class="product-card" data-type="حري كبير" tabindex="0">
+            <div class="product-img"><img src="assets/hari-big.jpg" alt="حري كبير" loading="lazy" /></div>
+            <div class="product-title">حري كبير</div>
           </article>
-          <article class="product-card" data-product="حري جبر">
-            <img src="assets/products/hari-jabr.jpg" alt="حري جبر" loading="lazy" />
-            <button type="button">حري جبر</button>
+          <article class="product-card" data-type="حري جبر" tabindex="0">
+            <div class="product-img"><img src="assets/hari-big.jpg" alt="حري جبر" loading="lazy" /></div>
+            <div class="product-title">حري جبر</div>
           </article>
-          <article class="product-card" data-product="حري صغير">
-            <img src="assets/products/hari-small.jpg" alt="حري صغير" loading="lazy" />
-            <button type="button">حري صغير</button>
+          <article class="product-card" data-type="حري صغير" tabindex="0">
+            <div class="product-img"><img src="assets/hari-small.jpg" alt="حري صغير" loading="lazy" /></div>
+            <div class="product-title">حري صغير</div>
           </article>
-          <article class="product-card" data-product="حري وسط">
-            <img src="assets/products/hari-medium.jpg" alt="حري وسط" loading="lazy" />
-            <button type="button">حري وسط</button>
+          <article class="product-card" data-type="حري وسط" tabindex="0">
+            <div class="product-img"><img src="assets/hari-small.jpg" alt="حري وسط" loading="lazy" /></div>
+            <div class="product-title">حري وسط</div>
           </article>
         </div>
 
-        <div class="product-grid sawakni-row" id="sawakni">
-          <article class="product-card wide" data-product="سواكني حمري جبر">
-            <img src="assets/products/sawakni-hamri-jabr.jpg" alt="سواكني حمري جبر" loading="lazy" />
-            <button type="button">سواكني حمري جبر</button>
+        <div class="products-grid second-row" id="sawakni">
+          <article class="product-card" data-type="سواكني حمري جبر" tabindex="0">
+            <div class="product-img"><img src="assets/sawakni-hamri.jpg" alt="سواكني حمري جبر" loading="lazy" /></div>
+            <div class="product-title">سواكني حمري جبر</div>
           </article>
-          <article class="product-card wide" data-product="سواكني حمري جذع">
-            <img src="assets/products/sawakni-hamri-jadh.jpg" alt="سواكني حمري جذع" loading="lazy" />
-            <button type="button">سواكني حمري جذع</button>
+          <article class="product-card" data-type="سواكني حمري جذع" tabindex="0">
+            <div class="product-img"><img src="assets/sawakni-hamri.jpg" alt="سواكني حمري جذع" loading="lazy" /></div>
+            <div class="product-title">سواكني حمري جذع</div>
           </article>
-          <article class="product-card wide" data-product="سواكني دمزاني وسط">
-            <img src="assets/products/sawakni-damzani.jpg" alt="سواكني دمزاني وسط" loading="lazy" />
-            <button type="button">سواكني دمزاني وسط</button>
+          <article class="product-card" data-type="سواكني دمزاني وسط" tabindex="0">
+            <div class="product-img"><img src="assets/sawakni-damzani.jpg" alt="سواكني دمزاني وسط" loading="lazy" /></div>
+            <div class="product-title">سواكني دمزاني وسط</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section cutting" id="cutting">
+    <section class="cuts-section" id="cuts" aria-labelledby="cuts-title">
       <div class="wrap">
-        <h2 class="section-title"><span></span>اختر طريقة التقطيع<span></span></h2>
-        <div class="cut-grid">
+        <h2 id="cuts-title" class="section-title">اختر طريقة التقطيع</h2>
+        <div class="cuts-grid">
           <button class="cut-card" type="button" data-cut="ثلاجة">
-            <span class="line fridge"></span>
-            <b>ثلاجة</b>
+            <span class="cut-icon">▯</span>
+            <strong>ثلاجة</strong>
             <small>تقطيع إلى قطع مناسبة للتخزين</small>
           </button>
           <button class="cut-card" type="button" data-cut="حضرمي">
-            <span class="line pot"></span>
-            <b>حضرمي</b>
+            <span class="cut-icon">▰</span>
+            <strong>حضرمي</strong>
             <small>تقطيع خاص حسب الطلب</small>
           </button>
           <button class="cut-card" type="button" data-cut="أرباع">
-            <span class="line meat"></span>
-            <b>أرباع</b>
+            <span class="cut-icon">◺</span>
+            <strong>أرباع</strong>
             <small>تقطيع إلى أرباع حسب الطلب</small>
           </button>
           <button class="cut-card" type="button" data-cut="مفاصل">
-            <span class="line links"></span>
-            <b>مفاصل</b>
+            <span class="cut-icon">∞</span>
+            <strong>مفاصل</strong>
             <small>تقطيع إلى مفاصل حسب الطلب</small>
           </button>
         </div>
       </div>
     </section>
 
-    <section class="order" id="order">
+    <section class="order-section" id="order" aria-labelledby="order-title">
       <div class="wrap">
-        <form class="order-box" id="orderForm">
-          <h2><span></span>اطلب ذبيحتك الآن<span></span></h2>
+        <form class="order-card" id="orderForm" novalidate>
+          <h2 id="order-title">اطلب ذبيحتك الآن</h2>
           <div class="form-grid">
             <label>
-              <input id="customerName" name="name" type="text" autocomplete="name" placeholder="الاسم الكامل" required />
+              <span>الاسم الكامل</span>
+              <input id="name" type="text" placeholder="الاسم الكامل" autocomplete="name" required />
             </label>
             <label>
-              <input id="customerPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="رقم الجوال" required />
+              <span>رقم الجوال</span>
+              <input id="phone" type="tel" placeholder="05xxxxxxxx" inputmode="tel" autocomplete="tel" required />
             </label>
             <label>
-              <select id="productType" name="product" required>
-                <option value="">نوع الذبيحة</option>
+              <span>نوع الذبيحة</span>
+              <select id="type" required>
+                <option value="">اختر نوع الذبيحة</option>
                 <option>حري كبير</option>
                 <option>حري جبر</option>
                 <option>حري صغير</option>
@@ -155,8 +154,9 @@
               </select>
             </label>
             <label>
-              <select id="cutType" name="cut" required>
-                <option value="">طريقة التقطيع</option>
+              <span>طريقة التقطيع</span>
+              <select id="cut" required>
+                <option value="">اختر طريقة التقطيع</option>
                 <option>ثلاجة</option>
                 <option>حضرمي</option>
                 <option>أرباع</option>
@@ -165,41 +165,49 @@
               </select>
             </label>
             <label>
-              <input id="deliveryDate" name="date" type="date" placeholder="تاريخ التوصيل المتوقع" />
+              <span>تاريخ التوصيل المتوقع</span>
+              <input id="date" type="date" required />
             </label>
             <label>
-              <input id="slaughterTime" name="time" type="time" placeholder="وقت الذبح" />
+              <span>وقت الذبح</span>
+              <select id="time" required>
+                <option value="">اختر وقت الذبح</option>
+                <option>صباحًا</option>
+                <option>ظهرًا</option>
+                <option>عصرًا</option>
+                <option>حسب المتاح</option>
+              </select>
             </label>
             <label class="full">
-              <textarea id="notes" name="notes" rows="3" placeholder="ملاحظات إضافية"></textarea>
+              <span>ملاحظات إضافية</span>
+              <textarea id="notes" placeholder="اكتب ملاحظات إضافية"></textarea>
             </label>
           </div>
-          <button class="submit" type="submit">إرسال الطلب على واتساب</button>
-          <p class="status" id="formStatus" aria-live="polite"></p>
+          <button class="submit-btn" type="button" id="sendBtn">إرسال الطلب على واتساب</button>
         </form>
       </div>
     </section>
 
-    <section class="benefits" aria-label="مزايا ذبائح أبو خالد">
-      <div class="wrap benefits-wrap">
-        <div><span class="ico mosque"></span><b>ذبح شرعي</b><small>وفق الضوابط الشرعية</small></div>
-        <div><span class="ico truck"></span><b>توصيل مبرد</b><small>سريع وآمن</small></div>
-        <div><span class="ico knife"></span><b>تقطيع حسب الطلب</b><small>حسب رغبتك</small></div>
-        <div><span class="ico medal"></span><b>جودة مضمونة</b><small>نختار لك الأفضل</small></div>
+    <section class="benefits" aria-label="مميزات ذبايح أبو خالد">
+      <div class="wrap benefits-strip">
+        <div><strong>ذبح شرعي</strong><small>وفق الضوابط الشرعية</small></div>
+        <div><strong>توصيل مبرد</strong><small>سريع وآمن</small></div>
+        <div><strong>تقطيع حسب الطلب</strong><small>حسب رغبتك</small></div>
+        <div><strong>جودة مضمونة</strong><small>نختار لك الأفضل</small></div>
       </div>
     </section>
   </main>
 
   <footer class="footer" id="contact">
-    <div class="wrap footer-wrap">
-      <h2>ذبائح أبو خالد</h2>
+    <div class="wrap">
+      <h2>ذبايح أبو خالد</h2>
       <p>حري وسواكني</p>
-      <span>ذبيحتك من المسلخ إلى باب بيتك</span>
+      <small>ذبيحتك من المسلخ إلى باب بيتك</small>
     </div>
   </footer>
 
-  <a class="float-wa" href="https://wa.me/966530856858" target="_blank" rel="noopener" aria-label="واتساب">☘</a>
-  <button class="to-top" type="button" aria-label="العودة للأعلى">⌃</button>
+  <a class="float-wa" href="https://wa.me/966530856858" target="_blank" rel="noopener" aria-label="واتساب">☏</a>
+  <a class="top-btn" href="#top" aria-label="العودة للأعلى">⌃</a>
 
   <script src="script.js"></script>
 </body>
